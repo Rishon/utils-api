@@ -42,7 +42,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "systems.rishon"
-            artifactId = "selautils"
+            artifactId = "utils-api"
             version = "${project.version}"
             from(components["java"])
         }
