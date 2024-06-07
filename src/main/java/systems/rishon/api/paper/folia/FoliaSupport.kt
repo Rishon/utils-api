@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.folia
+package systems.rishon.api.paper.folia
 
 object FoliaSupport {
 

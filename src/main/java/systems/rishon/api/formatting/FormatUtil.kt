@@ -1,4 +1,4 @@
-package systems.rishon.selautils.formatting
+package systems.rishon.api.formatting
 
 object FormatUtil {
 

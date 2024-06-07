@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.profile
+package systems.rishon.api.paper.profile
 
 import net.minecraft.server.level.ServerPlayer
 import org.bukkit.craftbukkit.entity.CraftPlayer

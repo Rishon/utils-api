@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.color
+package systems.rishon.api.paper.color
 
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.TextDecoration

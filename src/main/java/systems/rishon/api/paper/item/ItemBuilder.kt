@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.item
+package systems.rishon.api.paper.item
 
 import de.tr7zw.nbtapi.NBTItem
 import net.kyori.adventure.text.Component

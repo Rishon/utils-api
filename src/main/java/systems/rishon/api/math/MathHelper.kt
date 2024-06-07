@@ -1,4 +1,4 @@
-package systems.rishon.selautils.math
+package systems.rishon.api.math
 
 import java.util.Calendar
 import java.util.UUID

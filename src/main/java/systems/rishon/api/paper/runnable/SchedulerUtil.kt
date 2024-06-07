@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.runnable
+package systems.rishon.api.paper.runnable
 
 import io.papermc.paper.threadedregions.scheduler.FoliaAsyncScheduler
 import io.papermc.paper.threadedregions.scheduler.FoliaGlobalRegionScheduler
@@ -6,7 +6,7 @@ import io.papermc.paper.threadedregions.scheduler.ScheduledTask
 import org.bukkit.Bukkit
 import org.bukkit.plugin.Plugin
 import org.bukkit.scheduler.BukkitScheduler
-import systems.rishon.selautils.paper.folia.FoliaSupport
+import systems.rishon.api.paper.folia.FoliaSupport
 import java.util.concurrent.TimeUnit
 import java.util.function.Consumer
 

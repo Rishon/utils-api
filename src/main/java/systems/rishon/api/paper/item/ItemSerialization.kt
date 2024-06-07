@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.item
+package systems.rishon.api.paper.item
 
 import net.minecraft.world.item.ItemStack
 import org.bukkit.util.io.BukkitObjectInputStream

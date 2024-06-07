@@ -1,4 +1,4 @@
-package systems.rishon.selautils.paper.inventory
+package systems.rishon.api.paper.inventory
 
 import org.bukkit.entity.Player
 import org.bukkit.inventory.Inventory
