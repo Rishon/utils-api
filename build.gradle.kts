@@ -9,9 +9,15 @@ version = "1.0.0"
 
 repositories {
     mavenCentral()
+    maven {
+        name = "CodeMC"
+        url = uri("https://repo.codemc.io/repository/maven-public/")
+    }
 }
 
 dependencies {
+    compileOnly("de.tr7zw:item-nbt-api-plugin:2.12.4")
+
     paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
 }
 
@@ -37,7 +43,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "systems.rishon"
             artifactId = "selautils"
-            version = "1.0.0"
+            version = "${project.version}"
             from(components["java"])
         }
     }

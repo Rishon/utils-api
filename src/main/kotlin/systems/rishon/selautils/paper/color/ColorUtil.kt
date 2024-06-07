@@ -23,6 +23,7 @@ object ColorUtil {
 
     // Legacy Hex (ex. #FFFFFF)
     @JvmStatic
+    @Deprecated("Use translate instead")
     fun legacyHex(message: String): String {
         var modifiedMessage = message
         val pattern = Regex("#[a-fA-F0-9]{6}")
