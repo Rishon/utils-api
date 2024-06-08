@@ -17,7 +17,7 @@ To integrate `utils-api` into your project, add the following Maven repository a
 
 ```xml
 <repository>
-  <id>seladevelopment-repo</id>
+  <id>seladevelopment-releases</id>
   <name>Sela Development Repository</name>
   <url>https://repo.rishon.systems/releases</url>
 </repository>
@@ -34,7 +34,7 @@ For Gradle users, add the following repository and dependency declaration to you
 ```gradle
 repositories {
     maven {
-        name = "seladevelopment-repo"
+        name = "seladevelopmentReleases"
         url = uri("https://repo.rishon.systems/releases")
     }
 }
