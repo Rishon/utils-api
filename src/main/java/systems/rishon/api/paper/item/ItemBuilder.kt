@@ -11,7 +11,7 @@ import org.bukkit.inventory.meta.LeatherArmorMeta
 import org.bukkit.inventory.meta.SkullMeta
 
 class ItemBuilder(private val material: Material) {
-    private var item: ItemStack = ItemStack(Material.AIR)
+    private var item: ItemStack = ItemStack(material)
 
     fun build(): ItemStack {
         return this.item
