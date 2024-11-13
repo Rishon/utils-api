@@ -10,6 +10,10 @@ import java.util.Base64;
 
 object ItemSerialization {
 
+    /**
+     * Serialize an ItemStack to a base64 string
+     * @param itemStack The item stack to serialize
+     */
     @JvmStatic
     fun serializeItemStack(itemStack: ItemStack): String? {
         return try {
@@ -23,6 +27,10 @@ object ItemSerialization {
         }
     }
 
+    /**
+     * Deserialize an ItemStack from a base64 string
+     * @param data The serialized item stack
+     */
     @JvmStatic
     fun deserializeItemStack(data: String): ItemStack? {
         return try {

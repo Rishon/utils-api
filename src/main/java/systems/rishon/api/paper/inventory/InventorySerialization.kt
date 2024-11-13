@@ -12,6 +12,11 @@ import java.io.EOFException
 
 object InventorySerialization {
 
+    /**
+     * Serialize an inventory to a base64 string
+     * @param inventory The inventory to serialize
+     * @return The serialized inventory
+     */
     @JvmStatic
     fun toBase64(inventory: Inventory): String {
         return try {
@@ -29,6 +34,12 @@ object InventorySerialization {
         }
     }
 
+    /**
+     * Deserialize an inventory from a base64 string
+     * @param data The serialized inventory
+     * @param player The player to deserialize the inventory to
+     * @return The deserialized inventory
+     */
     @JvmStatic
     fun fromBase64(data: String, player: Player): Inventory {
         return try {

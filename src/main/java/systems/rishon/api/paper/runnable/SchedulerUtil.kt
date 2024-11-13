@@ -30,6 +30,10 @@ class SchedulerUtil(private val plugin: Plugin) {
         regionScheduler.cancelTasks(this.plugin)
     }
 
+    /**
+     * Run a task asynchronously if Folia is running, otherwise run it through bukkit
+     * @param runnable The task to run
+     */
     fun runTaskAsync(runnable: Consumer<Any?>) {
         if (this.isRunningFolia == true) {
             asyncScheduler.runNow(this.plugin) { t: ScheduledTask? -> runnable.accept(t) }
@@ -38,6 +42,10 @@ class SchedulerUtil(private val plugin: Plugin) {
         }
     }
 
+    /**
+     * Run a timer task asynchronously if Folia is running, otherwise run it through bukkit
+     * @param runnable The task to run
+     */
     fun runTaskTimerAsync(runnable: Consumer<Any?>, ticks: Long) {
         if (this.isRunningFolia == true) {
             asyncScheduler.runAtFixedRate(
@@ -48,6 +56,10 @@ class SchedulerUtil(private val plugin: Plugin) {
         }
     }
 
+    /**
+     * Run a timer task synchronously if Folia is running, otherwise run it through bukkit
+     * @param runnable The task to run
+     */
     fun runTaskTimerSync(runnable: Consumer<Any?>, ticks: Long) {
         if (this.isRunningFolia == true) {
             regionScheduler.runAtFixedRate(this.plugin, { t: ScheduledTask? -> runnable.accept(t) }, 0, ticks)
@@ -56,6 +68,10 @@ class SchedulerUtil(private val plugin: Plugin) {
         }
     }
 
+    /**
+     * Run a task synchronously if Folia is running, otherwise run it through bukkit
+     * @param runnable The task to run
+     */
     fun runTaskSync(runnable: Consumer<Any?>) {
         if (this.isRunningFolia == true) {
             regionScheduler.run(this.plugin) { t: ScheduledTask? -> runnable.accept(t) }

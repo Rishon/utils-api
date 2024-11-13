@@ -6,6 +6,11 @@ import org.bukkit.entity.Player
 
 object Utils {
 
+    /**
+     * Get the skin of a player
+     * @param player The player to get the skin of
+     * @return The skin of the player as an array of texture and signature
+     */
     @JvmStatic
     fun getSkin(player: Player): Array<String> {
         val playerNMS = (player as CraftPlayer).handle
@@ -23,6 +28,11 @@ object Utils {
         return arrayOf(texture, signature)
     }
 
+    /**
+     * Get the skin of a player
+     * @param serverPlayer The player to get the skin of
+     * @return The skin of the player as an array of texture and signature
+     */
     @JvmStatic
     fun getFakePlayerSkin(serverPlayer: ServerPlayer): Array<String> {
         val profile = serverPlayer.gameProfile
