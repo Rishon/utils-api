@@ -33,7 +33,7 @@ kotlin {
 publishing {
     repositories {
         maven {
-            name = "seladevelopment-repo"
+            name = "seladevelopment"
             url = uri("https://repo.rishon.systems/releases")
             credentials {
                 username = System.getenv("MAVEN_NAME")
