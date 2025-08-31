@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "2.0.0"
-    id("io.papermc.paperweight.userdev") version "1.7.4"
+    kotlin("jvm") version "2.2.10"
+    id("io.papermc.paperweight.userdev") version "1.7.7"
     id("maven-publish")
 }
 
 group = "systems.rishon"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     gradlePluginPortal()
@@ -20,10 +20,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly("de.tr7zw:item-nbt-api-plugin:2.12.4")
-    compileOnly("org.geysermc.floodgate:api:2.2.3-SNAPSHOT")
+    compileOnly("de.tr7zw:item-nbt-api-plugin:2.15.2")
+    compileOnly("org.geysermc.floodgate:api:2.2.4-SNAPSHOT")
 
-    paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
 }
 
 kotlin {
